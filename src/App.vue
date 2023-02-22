@@ -2,10 +2,10 @@
   <div id="app">
     <el-container>
       <el-header style="height: 100">
-          <img src="./assets/head-img-head.png" style="width: 2560; height: 100;">
+        <img src="./assets/head-img.png" style="width: 2560;">
       </el-header>
       <el-main>
-        <div id="main" style="width: auto; height: 100px;" >
+        <div id="main" style="width: auto;">
           <el-menu :default-active="activeIndex2" class="el-menu-demo" mode="horizontal" @select="handleSelect"
             background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
             <el-menu-item index="1">首页</el-menu-item>
@@ -51,6 +51,15 @@
         </div>
       </el-main>
     </el-container>
+    <el-container>
+      <el-main>
+        <el-carousel :interval="4000" type="card" height="400px">
+          <el-carousel-item v-for="item in 6" :key="item">
+            <h3 class="medium">{{ item }}</h3>
+          </el-carousel-item>
+        </el-carousel>
+      </el-main>
+    </el-container>
     <!-- <img src="./assets/logo.png">
     <div>
       <el-button @click="startHacking">Start</el-button>
@@ -60,42 +69,90 @@
 
 <script>
 export default {
-  data() {
-    return {
-      bannerHeight: 50,
-      imgwrap: [
-        { url: require("./assets/head-img.png") },
-        { url: require("./assets/head-img.png") },
-        { url: require("./assets/head-img.png") },
-        { url: require("./assets/head-img.png") },
-        { url: require("./assets/head-img.png") }
-      ]
-    }
-  },
-  mounted() {
-    this.setSize();
-    window.addEventListener('resize', () => {
-      this.setSize();
-    }, false);
-  },
+  // data() {
+  //   return {
+  //     bannerHeight: 50,
+  //     imgwrap: [
+  //       { url: require("./assets/head-img.png") },
+  //       { url: require("./assets/head-img.png") },
+  //       { url: require("./assets/head-img.png") },
+  //       { url: require("./assets/head-img.png") },
+  //       { url: require("./assets/head-img.png") }
+  //     ]
+  //   }
+  // },
+  // mounted() {
+  //   this.setSize();
+  //   window.addEventListener('resize', () => {
+  //     this.setSize();
+  //   }, false);
+  // },
+  // methods: {
+  //   setSize() {
+  //     this.bannerHeight = document.body.clientWidth / 4
+  //   }
+  // }
   methods: {
-    setSize() {
-      this.bannerHeight = document.body.clientWidth / 4
+    handleOpen(key, keyPath) {
+      console.log(key, keyPath);
+    },
+    handleClose(key, keyPath) {
+      console.log(key, keyPath);
     }
   }
 }
 </script>
 
 <style>
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
   font-family: Helvetica, sans-serif;
   text-align: center;
 }
-#el-main{
 
+img {
+  margin: 0;
+  padding: 0;
 }
-.bannerimg {
-  width: 100%;
-  height: inherit;
+
+.el-header {
+  margin: 0;
+  padding: 0;
 }
+
+.el-main {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* line-height: 200px; */
+  background-color: #D3DCE6;
+  color: #333;
+}
+
+/* .el-aside {
+  margin: 0;
+  padding: 0;
+  background-color: #E9EEF3;
+  color: #333;
+  text-align: center;
+  line-height: 200px;
+} */
+.el-carousel__item h3 {
+    color: #475669;
+    font-size: 14px;
+    opacity: 0.75;
+    margin: 0;
+  }
+  
+  .el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+  }
+  
+  .el-carousel__item:nth-child(2n+1) {
+    background-color: #d3dce6;
+  }
 </style>
