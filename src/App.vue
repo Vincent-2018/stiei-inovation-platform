@@ -52,11 +52,7 @@
     </el-container>
     <el-container>
       <el-main>
-        <el-carousel :interval="4000" type="card" height="550px">
-          <el-carousel-item v-for="(img, index) in imgList" :key="index">
-            <img :src="img.url" width="100%" height="100%">
-          </el-carousel-item>
-        </el-carousel>
+        <router-view />
       </el-main>
     </el-container>
   </div>
@@ -67,29 +63,18 @@ export default {
   data() {
     return {
       activeIndex: '1',
-      imgList: [
-        {
-          url: require('./assets/1.jpeg') //url: '../assets/lake.jpg'      
-        },
-        {
-          url: require('./assets/2.jpeg') //url: '../assets/build.jpg' 
-        },
-        {
-          url: require('./assets/3.jpeg') //url: '../assets/road.jpg' 
-        },
-        {
-          url: require('./assets/4.jpeg') //url: '../assets/sea.jpg' 
-        },
-        {
-          url: require('./assets/5.jpeg') //url: '../assets/sea.jpg' 
-        }
-      ]
     }
+  },
+  created() {
+    this.$router.replace("/home")
   },
   methods: {
     handleSelect(key, keyPath) {
-        console.log(key, keyPath);
+      console.log(key, keyPath);
+      if (key = "2-1") {
+        this.$router.replace("/relatedInformation")
       }
+    }
   }
 }
 </script>
