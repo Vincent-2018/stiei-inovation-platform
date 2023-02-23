@@ -6,7 +6,7 @@
       </el-header>
       <el-main>
         <div id="main" style="width: auto;">
-          <el-menu :default-active="activeIndex2" class="el-menu-demo" mode="horizontal" @select="handleSelect"
+          <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect"
             background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
             <el-menu-item index="1">首页</el-menu-item>
             <el-submenu index="2">
@@ -46,59 +46,50 @@
               <template slot="title">双创培训</template>
               <el-menu-item index="9-1">培训信息</el-menu-item>
             </el-submenu>
-            <!-- <el-menu-item index="4"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item> -->
           </el-menu>
         </div>
       </el-main>
     </el-container>
     <el-container>
       <el-main>
-        <el-carousel :interval="4000" type="card" height="400px">
-          <el-carousel-item v-for="item in 6" :key="item">
-            <h3 class="medium">{{ item }}</h3>
+        <el-carousel :interval="4000" type="card" height="550px">
+          <el-carousel-item v-for="(img, index) in imgList" :key="index">
+            <img :src="img.url" width="100%" height="100%">
           </el-carousel-item>
         </el-carousel>
       </el-main>
     </el-container>
-    <!-- <img src="./assets/logo.png">
-    <div>
-      <el-button @click="startHacking">Start</el-button>
-    </div> -->
   </div>
 </template>
 
 <script>
 export default {
-  // data() {
-  //   return {
-  //     bannerHeight: 50,
-  //     imgwrap: [
-  //       { url: require("./assets/head-img.png") },
-  //       { url: require("./assets/head-img.png") },
-  //       { url: require("./assets/head-img.png") },
-  //       { url: require("./assets/head-img.png") },
-  //       { url: require("./assets/head-img.png") }
-  //     ]
-  //   }
-  // },
-  // mounted() {
-  //   this.setSize();
-  //   window.addEventListener('resize', () => {
-  //     this.setSize();
-  //   }, false);
-  // },
-  // methods: {
-  //   setSize() {
-  //     this.bannerHeight = document.body.clientWidth / 4
-  //   }
-  // }
-  methods: {
-    handleOpen(key, keyPath) {
-      console.log(key, keyPath);
-    },
-    handleClose(key, keyPath) {
-      console.log(key, keyPath);
+  data() {
+    return {
+      activeIndex: '1',
+      imgList: [
+        {
+          url: require('./assets/1.jpeg') //url: '../assets/lake.jpg'      
+        },
+        {
+          url: require('./assets/2.jpeg') //url: '../assets/build.jpg' 
+        },
+        {
+          url: require('./assets/3.jpeg') //url: '../assets/road.jpg' 
+        },
+        {
+          url: require('./assets/4.jpeg') //url: '../assets/sea.jpg' 
+        },
+        {
+          url: require('./assets/5.jpeg') //url: '../assets/sea.jpg' 
+        }
+      ]
     }
+  },
+  methods: {
+    handleSelect(key, keyPath) {
+        console.log(key, keyPath);
+      }
   }
 }
 </script>
@@ -129,30 +120,15 @@ img {
   padding: 0;
   text-align: center;
   /* line-height: 200px; */
-  background-color: #D3DCE6;
-  color: #333;
+  background-color: #fff;
+  color: #fff;
 }
 
-/* .el-aside {
-  margin: 0;
-  padding: 0;
-  background-color: #E9EEF3;
-  color: #333;
-  text-align: center;
-  line-height: 200px;
-} */
-.el-carousel__item h3 {
-    color: #475669;
-    font-size: 14px;
-    opacity: 0.75;
-    margin: 0;
-  }
-  
-  .el-carousel__item:nth-child(2n) {
-    background-color: #99a9bf;
-  }
-  
-  .el-carousel__item:nth-child(2n+1) {
-    background-color: #d3dce6;
-  }
+.el-carousel__item:nth-child(2n) {
+  background-color: #fff;
+}
+
+.el-carousel__item:nth-child(2n+1) {
+  background-color: #fff;
+}
 </style>
