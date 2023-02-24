@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <el-container>
-      <el-header style="height: 100">
-        <img src="./assets/head-img.png" style="width: 2560;">
+      <el-header style="height:auto">
+        <el-image :src="require('./assets/head-img.png')" fit="fill" style="display: block;"></el-image>
       </el-header>
       <el-main>
         <div id="main" style="width: auto;">
@@ -66,16 +66,15 @@ export default {
     }
   },
   created() {
-    this.$router.replace("/home")
+    this.$router.push("/home")
   },
   methods: {
     handleSelect(key, keyPath) {
-      console.log(key, keyPath);
-      if (key = "1") {
-        this.$router.replace("/home")
+      if (key === "1") {
+        this.$router.push("/home")
       }
-      else if (key = "2-1") {
-        this.$router.replace("/relatedInformation")
+      else if (key === "2-1") {
+        this.$router.push("/relatedInformation")
       }
     }
   }
