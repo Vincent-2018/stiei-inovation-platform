@@ -71,7 +71,10 @@ export default {
   methods: {
     handleSelect(key, keyPath) {
       console.log(key, keyPath);
-      if (key = "2-1") {
+      if (key = "1") {
+        this.$router.replace("/home")
+      }
+      else if (key = "2-1") {
         this.$router.replace("/relatedInformation")
       }
     }
