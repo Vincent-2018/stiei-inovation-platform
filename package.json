@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "element-ui": "^2.15.13",
+    "sass": "^1.39.0",
     "vue": "^2.7.14",
     "vue-router": "^3.2.0"
   },

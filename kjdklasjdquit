@@ -1,0 +1,203 @@
+[33mcommit 7a739641c979fb2b4528180a526a7c34db836cb3[m[33m ([m[1;36mHEAD -> [m[1;32mscq[m[33m, [m[1;31morigin/0224_test_scq[m[33m)[m
+Author: scq <shen_chengqiang@qq.com>
+Date:   Sat Feb 25 00:40:08 2023 +0800
+
+    相关政策页面
+
+[33mcommit 1ed40fcee34db3c21421ae4d2561543cf1469804[m
+Author: scq <shen_chengqiang@qq.com>
+Date:   Fri Feb 24 19:25:41 2023 +0800
+
+    vue router
+
+[33mcommit 4ff5689b0f31dd9020902f4d09012c875d7d64e1[m
+Author: scq <shen_chengqiang@qq.com>
+Date:   Fri Feb 24 00:04:07 2023 +0800
+
+    vue router
+
+[33mcommit 97393867483c1421d0f3443c3eca56a57ee6fb38[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/dev[m[33m, [m[1;32mmaster[m[33m, [m[1;32mdev[m[33m)[m
+Author: vincent <wongwanjay98@gmail.com>
+Date:   Thu Feb 23 17:40:34 2023 +0800
+
+    Fix error in console
+
+[33mcommit 3a647ea7bde29733e1159a684da701446721a57e[m
+Author: vincent <wongwanjay98@gmail.com>
+Date:   Wed Feb 22 22:33:18 2023 +0800
+
+    add Carousel & adjust el-header, el-main
+
+[33mcommit 513348721fc1c0857d526bbe8ba43417049bf499[m
+Author: vincent <wongwanjay98@gmail.com>
+Date:   Tue Feb 21 22:47:15 2023 +0800
+
+    update index
+
+[33mcommit a403dac79257845ebe9bf0709ba97d3b00100223[m
+Author: Leopoldthecoder <Leopoldthecuber@gmail.com>
+Date:   Tue Apr 17 14:35:23 2018 +0800
+
+    upgrade dependencies
+
+[33mcommit 0993660a27c418193f02cb95df164610295d2ab6[m
+Author: caihongyun <caihongyun@yeah.net>
+Date:   Thu Apr 5 20:02:36 2018 +0800
+
+    add extension to webpack config (#61)
+
+[33mcommit 2606f2739dc8ead1b6be2d52e9c044a136d7170a[m
+Author: Justin Chen <songhuagao@gmail.com>
+Date:   Wed Mar 21 20:10:01 2018 +0800
+
+    update dependencies versions: element-ui to 2.2.2, vue  to 2.5.16 (#62)
+    
+    * update dependencies versions: element-ui to 2.2.2, vue  to 2.5.16
+    
+    * update element-ui & vue to latest version
+
+[33mcommit 5cbdca718f65f242732ec807638c199f2ed78c70[m
+Author: Leopoldthecoder <Leopoldthecuber@gmail.com>
+Date:   Fri Oct 27 12:11:42 2017 +0800
+
+    upgrade element to 2.0
+
+[33mcommit 56602cb40b0b1b87009d3104d5aa2faab1fd8893[m
+Author: Leopoldthecoder <Leopoldthecuber@gmail.com>
+Date:   Thu Oct 26 14:33:17 2017 +0800
+
+    upgrade dependencies
+
+[33mcommit 7f71cd3ea434d96c10c85d239eeb4dcb7537074f[m[33m ([m[1;31morigin/1.x[m[33m)[m
+Author: 杨奕 <Leopoldthecoder@users.noreply.github.com>
+Date:   Fri Aug 11 10:18:57 2017 +0800
+
+    Update README.md
+
+[33mcommit 9cf9dc8a30f431a97b69a92ce838b7e0d42cee42[m
+Author: Leopoldthecoder <Leopoldthecuber@gmail.com>
+Date:   Fri Aug 11 10:17:21 2017 +0800
+
+    upgrade dependencies
+
+[33mcommit d6bc0022b12f0b806c628947660c80122b0d1a02[m
+Author: qingwei.li <cinwell.li@gmail.com>
+Date:   Tue May 2 10:44:05 2017 +0800
+
+    update dependencies, fixed #30
+
+[33mcommit 99e38a7f1adcf57559f6747d626e1bab62e1e2c0[m
+Author: qingwei.li <cinwell.li@gmail.com>
+Date:   Tue May 2 10:37:43 2017 +0800
+
+    fix babel config, fixed #34
+
+[33mcommit 5720269663746a0dbe8c975a0f06d98df66176fa[m
+Author: lizhihua <275091674@qq.com>
+Date:   Sun Apr 23 21:24:44 2017 -0500
+
+    Update package.json (#40)
+
+[33mcommit a31b17279256d0a8bfbf54c124d2790d903e3344[m
+Author: Xiaoyu Zhai <xiaoyu.zhai@hotmail.com>
+Date:   Fri Mar 10 18:47:02 2017 +0800
+
+    fix deprecated warning (#25)
+
+[33mcommit 3437ab5eafc97f83c92646bfffe088a74ddb2c93[m
+Author: qingwei.li <cinwell.li@gmail.com>
+Date:   Thu Jan 12 10:56:25 2017 +0800
+
+    Add environment
+
+[33mcommit f715f2cc8a424ccfd61d0f27decf71d076fdfe98[m
+Author: Greg <grzegorz.karol.jasinski@gmail.com>
+Date:   Tue Jan 10 16:36:19 2017 +0100
+
+    Update README.md - dev port number (#19)
+
+[33mcommit 8c071aa3496882ef88aa32d83de802d3079e0a12[m
+Author: Allan Alexandre <alexandesigner@gmail.com>
+Date:   Sun Jan 8 23:15:44 2017 -0300
+
+    add Makefile (#18)
+
+[33mcommit e112391d7d8df66676fcabe4ddcd55ca17da3b8a[m
+Author: super watano <watano@qq.com>
+Date:   Fri Jan 6 18:10:56 2017 -0600
+
+    优化配置 (#17)
+    
+    * 1. remove cross-env
+    2. add postcss and eslint
+    3. support vendor.js
+    
+    * add vendor.js
+
+[33mcommit 793124442b53a50a40101dc24400e46ee51d0822[m
+Author: qingwei.li <cinwell.li@gmail.com>
+Date:   Wed Nov 16 10:43:03 2016 +0800
+
+    Update to  webpack@beta26
+
+[33mcommit b3fb5a151222198f061af15ac0ac473402e631e2[m
+Author: Leopoldthecoder <Leopoldthecuber@gmail.com>
+Date:   Wed Nov 9 19:31:58 2016 +0800
+
+    upgrade element and vue versions
+
+[33mcommit fb67761bf85427e6fa3be8696a66417fa877f708[m
+Author: cinwell.li <cinwell.li@gmail.com>
+Date:   Tue Oct 11 17:40:14 2016 +0800
+
+    Update webpack.config.js
+    
+    防止用 wepback 1 的人看了后发现自己跑不起来  = =
+
+[33mcommit f3c025e1c9161bc57cac0ff7baa04b2b93b58158[m
+Author: Leopoldthecoder <Leopoldthecuber@gmail.com>
+Date:   Sat Oct 1 15:09:20 2016 +0800
+
+    upgrade to vue 2.0.1
+
+[33mcommit ba59401866c93478f4c44c1f3c9a471974c71d20[m
+Merge: a655fab c287df4
+Author: cinwell.li <cinwell.li@gmail.com>
+Date:   Thu Sep 29 21:33:22 2016 +0800
+
+    Merge pull request #4 from pi0/patch-1
+    
+    update vue to rc.8
+
+[33mcommit c287df47a4880bd11607042e63c9d9fb9243d075[m
+Author: Pooya Parsa <pi0@users.noreply.github.com>
+Date:   Thu Sep 29 16:00:54 2016 +0330
+
+    update vue to rc.8
+
+[33mcommit a655fabec799051bacf0e4d83bd3f19df7b494e7[m
+Author: 杨奕 <Leopoldthecoder@users.noreply.github.com>
+Date:   Fri Sep 23 14:49:34 2016 +0800
+
+    Update README.md
+
+[33mcommit 2ff0de2a0b0efa6a88f75c085621950c83a68aeb[m
+Merge: f1ec490 5d5574b
+Author: cinwell.li <cinwell.li@gmail.com>
+Date:   Fri Sep 23 14:44:00 2016 +0800
+
+    Merge pull request #1 from Leopoldthecoder/master
+    
+    init
+
+[33mcommit 5d5574b35a9d7fec0bbabf2522174f1e69c397f3[m
+Author: Leopoldthecoder <Leopoldthecuber@gmail.com>
+Date:   Fri Sep 23 12:06:00 2016 +0800
+
+    init
+
+[33mcommit f1ec4903e9a8f04ffc037346680dd21babd611e3[m
+Author: 杨奕 <Leopoldthecoder@users.noreply.github.com>
+Date:   Fri Sep 23 11:12:53 2016 +0800
+
+    Initial commit
