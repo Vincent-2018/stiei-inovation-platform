@@ -3,7 +3,7 @@
         <el-card class="card-list" v-for="(item, index) in cardList" :key="index">
             <div style="display: flex;">
                 <div class="content-div">
-                    <div class="title-div" :title="item.title">
+                    <div class="title-div" :title="item.title" @click="toDetail(item)">
                         {{ item.title }}
                     </div>
                     <div class="text-div">
@@ -40,7 +40,11 @@ export default {
             ]
         }
     },
-    methods: {}
+    methods: {
+        toDetail(info) {
+            this.$router.push("/interNetPlusDetail")
+        }
+    }
 }
 </script>
 <style scoped>
@@ -63,6 +67,10 @@ export default {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+
+.title-div:hover {
+    cursor: pointer;
 }
 
 .text-div {

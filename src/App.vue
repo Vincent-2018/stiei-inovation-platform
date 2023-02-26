@@ -79,9 +79,9 @@ export default {
       }
       else if (key === "2-1") {
         this.$router.push("/relatedInformation")
-      }else if (key === "6-4") {
+      } else if (key === "6-4") {
         this.$router.push("/InterNetPlus")
-      }else if (key === "6-5") {
+      } else if (key === "6-5") {
         this.$router.push("/ChallengeCup")
       }
     }
@@ -113,10 +113,7 @@ img {
 .el-main {
   margin: 0;
   padding: 0;
-  text-align: center;
-  /* line-height: 200px; */
   background-color: #fff;
-  color: #fff;
 }
 
 .el-carousel__item:nth-child(2n) {

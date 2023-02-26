@@ -24,10 +24,20 @@ let routes = [
         component: () => import("../src/page/InterNetPlus")
     },
     {
+        path: '/interNetPlusDetail',
+        name: 'InterNetPlusDetail',
+        component: () => import("../src/page/interNetPlusDetail")
+    },
+    {
         path: '/ChallengeCup',
         name: 'ChallengeCup',
         component: () => import("../src/page/ChallengeCup")
-    }
+    },
+    {
+        path: '/challengeCupDetail',
+        name: 'ChallengeCupDetail',
+        component: () => import("../src/page/challengeCupDetail")
+    },
 ]
 
 const createRouter = () => new VueRouter({
