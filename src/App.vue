@@ -15,6 +15,7 @@
               <el-menu-item index="2-2">课程标准</el-menu-item>
               <el-menu-item index="2-3">教学资源</el-menu-item>
               <el-menu-item index="2-4">项目模拟</el-menu-item>
+              <el-menu-item index="2-5">创业讲坛</el-menu-item>
             </el-submenu>
             <el-submenu index="3">
               <template slot="title">工作室</template>
@@ -30,6 +31,8 @@
               <el-menu-item index="6-1">泰迪</el-menu-item>
               <el-menu-item index="6-2">华为</el-menu-item>
               <el-menu-item index="6-3">行企业</el-menu-item>
+              <el-menu-item index="6-4">互联网+</el-menu-item>
+              <el-menu-item index="6-5">挑战杯</el-menu-item>
             </el-submenu>
             <el-submenu index="7">
               <template slot="title">学分互认</template>
@@ -76,6 +79,10 @@ export default {
       }
       else if (key === "2-1") {
         this.$router.push("/relatedInformation")
+      }else if (key === "6-4") {
+        this.$router.push("/InterNetPlus")
+      }else if (key === "6-5") {
+        this.$router.push("/ChallengeCup")
       }
     }
   }

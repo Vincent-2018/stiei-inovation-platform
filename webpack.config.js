@@ -70,5 +70,14 @@ module.exports = (options = {}) => ({
       index: url.parse(options.dev ? '/assets/' : publicPath).pathname
     }
   },
+  css : {
+    loaderOptions: {
+      sass: {    // 这里开始是新增的配置
+        sassOptions: {
+          outputStyle: 'expanded'
+        }
+      }
+    }
+  },
   devtool: options.dev ? '#eval-source-map' : '#source-map'
 })
