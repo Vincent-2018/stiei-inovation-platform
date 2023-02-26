@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <el-container>
-      <el-header style="height: 100">
-        <img src="./assets/head-img.png" style="width: 2560;">
+      <el-header style="height:auto">
+        <el-image :src="require('./assets/head-img.png')" fit="fill" style="display: block;"></el-image>
       </el-header>
       <el-main>
         <div id="main" style="width: auto;">
@@ -12,8 +12,9 @@
             <el-submenu index="2">
               <template slot="title">双创资源</template>
               <el-menu-item index="2-1">相关政策</el-menu-item>
-              <el-menu-item index="2-2">工作室</el-menu-item>
-              <el-menu-item index="2-3">企业项目</el-menu-item>
+              <el-menu-item index="2-2">课程标准</el-menu-item>
+              <el-menu-item index="2-3">教学资源</el-menu-item>
+              <el-menu-item index="2-4">项目模拟</el-menu-item>
             </el-submenu>
             <el-submenu index="3">
               <template slot="title">工作室</template>
@@ -26,9 +27,9 @@
             <el-menu-item index="5">学生项目</el-menu-item>
             <el-submenu index="6">
               <template slot="title">双创竞赛</template>
-              <el-menu-item index="6-1">组织架构</el-menu-item>
-              <el-menu-item index="6-2">日常运营</el-menu-item>
-              <el-menu-item index="6-3">项目管理</el-menu-item>
+              <el-menu-item index="6-1">泰迪</el-menu-item>
+              <el-menu-item index="6-2">华为</el-menu-item>
+              <el-menu-item index="6-3">行企业</el-menu-item>
             </el-submenu>
             <el-submenu index="7">
               <template slot="title">学分互认</template>
@@ -52,11 +53,7 @@
     </el-container>
     <el-container>
       <el-main>
-        <el-carousel :interval="4000" type="card" height="550px">
-          <el-carousel-item v-for="(img, index) in imgList" :key="index">
-            <img :src="img.url" width="100%" height="100%">
-          </el-carousel-item>
-        </el-carousel>
+        <router-view />
       </el-main>
     </el-container>
   </div>
@@ -67,29 +64,20 @@ export default {
   data() {
     return {
       activeIndex: '1',
-      imgList: [
-        {
-          url: require('./assets/1.jpeg') //url: '../assets/lake.jpg'      
-        },
-        {
-          url: require('./assets/2.jpeg') //url: '../assets/build.jpg' 
-        },
-        {
-          url: require('./assets/3.jpeg') //url: '../assets/road.jpg' 
-        },
-        {
-          url: require('./assets/4.jpeg') //url: '../assets/sea.jpg' 
-        },
-        {
-          url: require('./assets/5.jpeg') //url: '../assets/sea.jpg' 
-        }
-      ]
     }
+  },
+  created() {
+    this.$router.push("/home")
   },
   methods: {
     handleSelect(key, keyPath) {
-        console.log(key, keyPath);
+      if (key === "1") {
+        this.$router.push("/home")
       }
+      else if (key === "2-1") {
+        this.$router.push("/relatedInformation")
+      }
+    }
   }
 }
 </script>
