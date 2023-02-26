@@ -12,8 +12,9 @@
             <el-submenu index="2">
               <template slot="title">双创资源</template>
               <el-menu-item index="2-1">相关政策</el-menu-item>
-              <el-menu-item index="2-2">工作室</el-menu-item>
-              <el-menu-item index="2-3">企业项目</el-menu-item>
+              <el-menu-item index="2-2">课程标准</el-menu-item>
+              <el-menu-item index="2-3">教学资源</el-menu-item>
+              <el-menu-item index="2-4">项目模拟</el-menu-item>
             </el-submenu>
             <el-submenu index="3">
               <template slot="title">工作室</template>
@@ -26,9 +27,9 @@
             <el-menu-item index="5">学生项目</el-menu-item>
             <el-submenu index="6">
               <template slot="title">双创竞赛</template>
-              <el-menu-item index="6-1">组织架构</el-menu-item>
-              <el-menu-item index="6-2">日常运营</el-menu-item>
-              <el-menu-item index="6-3">项目管理</el-menu-item>
+              <el-menu-item index="6-1">泰迪</el-menu-item>
+              <el-menu-item index="6-2">华为</el-menu-item>
+              <el-menu-item index="6-3">行企业</el-menu-item>
             </el-submenu>
             <el-submenu index="7">
               <template slot="title">学分互认</template>
